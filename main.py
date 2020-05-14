@@ -1,5 +1,6 @@
 import os
 import sys
+import keys
 from yandex import Translater
 from time import sleep
 from tqdm import tqdm
@@ -9,7 +10,7 @@ import keyboard
 colorama.init(autoreset=True)
 
 tr = Translater.Translater()
-tr.set_key('trnsl.1.1.20200510T222203Z.0a84289883054b28.6c3f04d9d2be869537055cf0f69b95cb82a5e6eb')
+tr.set_key(keys.KEY)
 tr.set_from_lang('en')
 tr.set_to_lang('ru')
 
